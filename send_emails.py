@@ -199,12 +199,14 @@ def render_recommendations(user, tags, tag_pids, tag_scores):
 def send_email(to, html):
 
     # init the api
-    assert os.path.isfile('sendgrid_api_key.txt')
-    api_key = open('sendgrid_api_key.txt', 'r').read().strip()
+    # assert os.path.isfile('sendgrid_api_key.txt')
+    assert os.environ.get('SENDGRID_KEY')
+    # api_key = open('sendgrid_api_key.txt', 'r').read().strip()
+    api_key = os.environ.get('SENDGRID_KEY')
     sg = sendgrid.SendGridAPIClient(api_key=api_key)
 
     # construct the email
-    from_email = Email("admin@arxiv-sanity-lite.com")
+    from_email = Email("recommendations@patvoss.me")
     to_email = To(to)
     subject = tnow_str + " Arxiv Sanity Lite recommendations"
     content = Content("text/html", html)
