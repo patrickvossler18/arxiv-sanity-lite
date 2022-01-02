@@ -60,7 +60,7 @@ body {
 <body>
 
 <br><br>
-<div>Hi! Here are your <a href="https://arxiv-sanity-lite.com">arxiv-sanity-lite</a> recommendations. __STATS__</div>
+<div>Hi! Here are your <a href="http://arxiv-sanity-stats.patvoss.me/">arxiv-sanity-lite</a> recommendations. __STATS__</div>
 <br><br>
 
 <div>
@@ -69,7 +69,7 @@ body {
 
 <br><br>
 <div>
-To stop these emails remove your email in your <a href="https://arxiv-sanity-lite.com/profile">account</a> settings. (your account is __ACCOUNT__).
+To stop these emails remove your email in your <a href="http://arxiv-sanity-stats.patvoss.me/profile">account</a> settings. (your account is __ACCOUNT__).
 </div>
 <div> <3, arxiv-sanity-lite. </div>
 
