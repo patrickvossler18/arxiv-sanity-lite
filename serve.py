@@ -491,3 +491,6 @@ def register_email():
                 edb[g.user] = email
 
     return redirect(url_for('profile'))
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
