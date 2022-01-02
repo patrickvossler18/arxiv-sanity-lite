@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd /home/ubuntu/arxiv-sanity-lite
 python3 arxiv_daemon.py --num 2000
 
 if [ $? -eq 0 ]; then
