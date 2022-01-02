@@ -35,6 +35,8 @@ if os.path.isfile('secret_key.txt'):
     # example of generating a good key on your system is:
     # import secrets; secrets.token_urlsafe(16)
     sk = open('secret_key.txt').read().strip()
+elif os.environ.get('KEY', None) is not None:
+    sk = os.environ.get('KEY')
 else:
     print("WARNING: no secret key found, using default devkey")
     sk = 'devkey'
