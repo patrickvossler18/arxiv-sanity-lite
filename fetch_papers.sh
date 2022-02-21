@@ -1,5 +1,7 @@
 #!/bin/bash
-if $(expr $(date +%s) / 86400 % 2 == 0); then
+date_ms=$(date +%s);
+is_even=`expr $date_ms / 86400 % 2`;
+if [ $is_even -eq 0 ]; then
     cd /home/ubuntu/arxiv-sanity-lite
         python3 arxiv_daemon.py --num 2000
 
