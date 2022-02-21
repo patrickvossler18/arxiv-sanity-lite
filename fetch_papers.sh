@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ $(expr $(date +%s) / 86400 % 2 == 0)]; then
+if $(expr $(date +%s) / 86400 % 2 == 0); then
     cd /home/ubuntu/arxiv-sanity-lite
         python3 arxiv_daemon.py --num 2000
 
